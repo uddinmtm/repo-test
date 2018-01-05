@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Web Print Out</title>
+	<style>
+		/* ukuran kertas */
+		@page {
+			size: A4;
+		}
+		
+		/* margin */
+		@page:left {
+			margin-left: 2cm;
+		}
+
+		@page:right {
+			margin-left: 2cm;
+		}
+
+		@page {
+			@top-center {
+				margin-top: 2cm;
+			}
+		}
+
+		body {
+			position: relative;
+		}
+		
+		div.header {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+		
+		div.signature {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
+		div.content {
+			margin-bottom: 150px; /* blank space between content and signature */
+		}
+	</style>
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<h1>Header</h1>
+	</div>
+
+	<!-- signature -->
+	<div class="signature">
+		Signature
+	</div>
+
+	<table border="0" width="100%">
+		<thead>
+			<tr>
+				<td width="100%" height="80">
+					<!-- Blank space untuk header -->
+				</td>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td width="100%" height="20">
+					<!-- Blank space untuk footer -->
+				</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td width="100%">
+					<!-- content -->
+					<div class="content">
+						Lorem ipsum dolor sit amet, denique elaboraret eu mea, nulla accommodare ne cum, has no volumus eligendi definitionem. Clita ancillae disputando duo ad, eros saepe ubique mea et. Civibus posidonium concludaturque an eam, qui dicta tempor ad, cum eu atqui disputationi. Omnis adhuc no usu, duo natum ipsum recteque ad. Pri minim mediocrem elaboraret at, te ponderum electram salutatus nec, dolores appellantur at has.
+
+						Eum ea labore dissentiet. Te his possit apeirian, sit aperiri sanctus fierent an, sea an option tibique. Ei odio nostrud expetenda usu, ut quo malis cotidieque. Eam no viderer omittam detracto.
+
+						Eos te probo gloriatur, nec ne amet purto, est eu agam modus. At vim vitae euismod minimum, nam nobis iisque appellantur ut. Cu per sumo ancillae, te vix graece adipisci. Ludus accusamus consequat vix eu, ne usu quod suscipit. Purto labores ceteros duo ex. Id vix velit officiis, prompta senserit vituperatoribus id usu, primis volutpat vituperatoribus ad eum.
+
+						Eu ipsum causae placerat mel. Ex nec error quando invenire. Omittam officiis principes pro cu, at meis prodesset moderatius vel, quidam definiebas sea an. Ut duo dignissim necessitatibus, id vim doming scripta. Pro ex solum tritani sapientem, numquam ancillae cum no.
+
+						Cu menandri dissentias necessitatibus vim. Epicurei aliquando persecuti pri ea, vis volumus efficiendi ut, solum animal explicari an mea. No sumo corpora consetetur eam. Has wisi percipitur contentiones in, id sea modo fuisset, pro causae placerat assueverit ne. Mei recusabo delicata interpretaris an, mutat virtute in sea. Enim fabellas usu cu, eleifend dissentiet ea mel.		
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
